@@ -4,7 +4,7 @@ void setup()
 	size(450,350);
 	b = loadImage("http://i.imgur.com/l2TxLo8.png");
 	frameRate(1);
-	background(0);
+	background(200);
 	fill(255);
 	textAlign(CENTER);
 	textSize(24);
