@@ -2,7 +2,7 @@ PImage b;
 void setup()
 {
 	size(450,310);
-	b = loadImage("http://i.imgur.com/l2TxLo8.png");
+	b = loadImage("http://i.imgur.com/oiDCBHq.png");
 	frameRate(1);
 	background(100);
 	fill(255);
