@@ -4,29 +4,40 @@
 		<title>How to put images in your program or webpage using imgur.com</title>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles.css">
+		<script src="processing.js"></script>
 	</head>
 	<body>
 		<header>
 			<h1>How to put images in your program or webpage using imgur.com</h1>
 		</header>
+		<section>
+			<canvas id="processing" data-processing-sources="ImageHowTo.pde">
+				</canvas>
+		</section>
 			<section id="content">
-				<p>You can find a wide range of fonts at <li href="http://www.google.com/fonts">google.com/fonts</li>. Let's say that you've decided you really like the Lobster font.
-				<p><img src="http://imgur.com/AdpYh9p.png">
-				<p>Click on the "quick use" icon underneath the Lobster font, and you'll see a list of all
-				   font variations along with instructions on how to use them. In this case there is only one
-				   variation of Lobster, "Normal 400." To use the font, we'll first copy select and copy it.
-				   <p><img src="http://i.imgur.com/xWbby4n.png">
-				   Then we will paster the link into the head of our index.html
-				   <p><img src="http://i.imgur.com/tMAVHHF.png"></p>
-				   Now, go back to google fonts and copy the code from step 4
-				   <p><img src="http://i.imgur.com/7F8BfmX.png"></p>
-				   <p>and paste it into the body of the styles.css file</p>
-				   <p><img src="http://i.imgur.com/GuOWiHg.png">
-				   <p>Save your work, push your changes to Git Hub and your webpage will now have that cool
-				      Lobster font.
+				<p>Git Hub doesn't let you store large files like images or music. If you want to put images into your program or website, you'll first need a image hosting services. I'm going to use imgur.com. First, upload your images to imgur by clicking on "Computer", selecting the images and clicking start upload.
+				<p><img src="http://i.imgur.com/kmzsAK8.png">
+				<p>Once your images are online, you use the "Direct Link (email & IM)" to place the picture
+				on either your webpage or in the program
+				<p><img src="http://i.imgur.com/h4VZHKI.png">
+				
+				<h2>How to put an image in the program</h2>
+				<p>Here's a simple program that loads a mug shot of Bill Gates.
+				<p><code><pre>
+PImage b; //Declare a PImage named b
+void setup()
+{
+	size(450,315);
+	b = loadImage("http://imgur.com/8s8eke8.jpg"); //initialize with imgur url
+}
+void draw()
+{
+	image(b, 0, 0,450,315); //image has top left corner at (0,0) width of 450 and height of 315
+}
+				</pre></code>
 		    </section>
 	    <footer>
-		    Mr. Simon, Lowell High School, San Francisco
+		    <a href="http://mrsimon.net>Mr. Simon, Lowell High School, San Francisco</a>
 	    </footer>
 	</body>
 </html>
