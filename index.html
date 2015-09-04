@@ -11,7 +11,7 @@
 			<h1>How to put images in your program or webpage using imgur.com</h1>
 		</header>
 			<section id="content">
-				<P>First, put the image in your repository (folder) of your project.
+				<P>First, put the image in the repository (folder) of your project.
 
 				<p>It's important to distguish between putting an image on the webpage and putting an image into the code of the program. If you just want a static, non moving picture, it's probably easier to put the image in the html code of th webpage. To put the image on the webpage, I use something like this image html tag <code>&lt;img src="http://aAHK0LA.png"&gt</code> in the body of the index.html. 
 				<p>Here's an example of a non moving picture on the webpage.
@@ -22,7 +22,7 @@
 				
 				
 				
-				<p>To put the image in a processing program. I need to declare a <code>PImage</code> variable, initialize it and draw it to the screen with the <code>image()</code> function. Here's a simple program that loads a picture:
+				<p>To put the image in a processing program. I need to declare a <code>PImage</code> variable, initialize it and draw it to the screen with the <code>image()</code> function. Here's a simple program that displays a picture:
 				<p><code><pre>
 PImage b; //Declare a PImage named b
 void setup()
@@ -32,7 +32,7 @@ void setup()
 }
 void draw()
 {
-	image(b, 0, 0,450,315); //image has top left corner at (0,0) width of 450 and height of 315
+	image(b, 0, 0,450,315); //displays the image with top left corner at (0,0) width of 450 and height of 315
 }
 				</pre></code> 
 		    </section>
