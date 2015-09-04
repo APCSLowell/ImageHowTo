@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="utf-8">
-		<title>How to put images in your program or webpage using imgur.com</title>
+		<title>How to put images in your program or webpage</title>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles.css">
 		<script src="processing.js"></script>
@@ -11,26 +11,24 @@
 			<h1>How to put images in your program or webpage using imgur.com</h1>
 		</header>
 			<section id="content">
-				<P>First, it's important to distguish between putting an image on the webpage and putting an image into the code of the program. If you just want a static, non moving picture, it's probably easier to put the image in the html code of th webpage. If you want to animate the picture or have interact with other objects in the program, you'll probably want to put it in the .pde code file.</P>
+				<P>First, put the image in your repository (folder) of your project.
+
+				<p>It's important to distguish between putting an image on the webpage and putting an image into the code of the program. If you just want a static, non moving picture, it's probably easier to put the image in the html code of th webpage. To put the image on the webpage, I use something like this image html tag <code>&lt;img src="http://aAHK0LA.png"&gt</code> in the body of the index.html. 
 				<p>Here's an example of a non moving picture on the webpage.
-				<p><img src="http://i.imgur.com/aAHK0LA.png">
-				<p>And here's an example of an animated picture in a processing program
+				<p><img src="images/aAHK0LA.png">
+				<p>If you want to animate the picture or have interact with other objects in the program, you'll probably want to put it in the .pde code file. Here's an example of an animated picture in a processing program
 				<canvas id="ImageHowTo" data-processing-sources="ImageHowTo.pde" width="450" height="350">
 				</canvas>
-				<p>Git Hub doesn't let you store large files like images or music. If you want to put images into your program or website, you'll first need a image hosting service. I'm going to use imgur.com, but there are many similar free services. First, upload your images to imgur by clicking on "Computer", selecting the images and clicking start upload.
-				<p><img src="http://i.imgur.com/kmzsAK8.png">
-				<p>Once your images are online, you use the "Direct Link (email & IM)" to place the picture
-				on either your webpage or in the program
-				<p><img src="http://i.imgur.com/h4VZHKI.png">
-				<p>To put the image on the webpage, I use something like this image html tag <code>&lt;img src="http://i.imgur.com/aAHK0LA.png"&gt</code> in the body of the index.html. You can copy and paste from the box labeled "HTML Image (websites / blogs)" on imgur.
 				
-				<p>To put the image in a processing program. I need to declare a <code>PImage</code> variable, initialize it and draw it to the screen with the <code>image()</code> function. Here's a simple program that loads a mug shot of Bill Gates.
+				
+				
+				<p>To put the image in a processing program. I need to declare a <code>PImage</code> variable, initialize it and draw it to the screen with the <code>image()</code> function. Here's a simple program that loads a picture:
 				<p><code><pre>
 PImage b; //Declare a PImage named b
 void setup()
 {
 	size(450,315);
-	b = loadImage("http://imgur.com/8s8eke8.jpg"); //initialize with imgur url
+	b = loadImage("http://8s8eke8.jpg"); //loads the image
 }
 void draw()
 {
